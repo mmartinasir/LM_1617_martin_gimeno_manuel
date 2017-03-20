@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="style.css" media="screen" title="no title" charset="utf-8">
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<!-- Div de clase container donde estará la galería -->
+	<div class="container">
+	<!-- Las flechas para cambiar de imagen. La flecha izquierda está invertida con css -->
+		<div class="arrowleft"><img src="arrow-icon--myiconfinder-23.png"/></div>
+		<div class="arrowright"><img src="arrow-icon--myiconfinder-23.png"/></div>
+	<!-- Div que contiene las imagenes de la galería -->
+		<div class="gallery">
+			<div class="imagen"><img src="galeria/9f8d70414e5099a97c46c516fb66106d.jpg"/></div>
+			<div><img src="galeria/a999c0d7b7c6bbecc72294a738b0da0c.jpg"/></div>
+			<div><img src="galeria/EzJwoS3.jpg"/></div>
+			<div><img src="galeria/fashih_mage2.png"/></div>
+			<div><img src="galeria/fc4fe12e69af949967998265b2db27ec.png"/></div>
+			<div><img src="galeria/UA_2015_04_06_3.png"/></div>
+
+	</div>
+
+	<script>
+	  $(function() {
+			$(".gallery :first-child").css({"opacity":"1"});
+			$(".gallery :first-child").siblings().css({"opacity":"0"})
+			$(".arrowright").click(function(){
+				if ($(".imagen").next().length!=0) {
+				$(".imagen").removeClass("imagen").animate({
+					opacity: 0
+				},500).next().addClass("imagen").animate({
+					opacity: 1
+				},500)
+			 }
+		 	});
+			$(".arrowleft").click(function(){
+				if ($(".imagen").prev().length!=0) {
+				$(".imagen").removeClass("imagen").animate({
+					opacity: 0
+				},500).prev().addClass("imagen").animate({
+					opacity: 1
+				},500)
+			 }
+			})
+
+
+
+	  });
+	</script>
+
+</body>
+</html>

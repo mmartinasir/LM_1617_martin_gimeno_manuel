@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background: url(background.jpg);
+  background-repeat: no-repeat;
+}
+.container {
+  height: 600px;
+  width: 800px;
+  border: 1px solid black;
+  margin: 30px auto;
+  background-color: white;
+}
+.arrowleft img {
+  position: relative;
+  height: 80px;
+  width: 80px;
+  float: left;
+  top: 250px;
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
+.arrowright img {
+  position: relative;
+  height: 80px;
+  width: 80px;
+  float: right;
+  top: 250px;
+}
+.gallery {
+  position: relative;
+  height: 400px;
+  width: 600px;
+  margin: 10px auto;
+  top: 70px;
+}
+.gallery img {
+  position: absolute;
+  height: 300px;;
+  width: auto;
+  margin: 20px auto;
+  top: 20px;
+  left: 140px;
+}

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JQuery 1</title>
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="query1.css">
+</head>
+<body>
+
+<!-- Titular H1 -->
+
+<h1>Ejercicio JQuery</h1><br>
+
+<!-- Tabla horario -->
+
+	<table border="lpx solid black" class="tabla1">
+			<thead>
+					<tr>
+							<th>HORA</th>
+							<th>LUNES</th>
+							<th>MARTES</th>
+							<th>MIERCOLES</th>
+							<th>JUEVES</th>
+							<th>VIERNES</th>
+					</tr>
+			</thead>
+			<tbody>
+					<tr>
+							<td>8:15</td>
+							<td>LM</td>
+							<td>FOL</td>
+							<td>LM</td>
+							<td>PRE</td>
+							<td>GBD</td>
+					</tr>
+					<tr>
+							<td>9:15</td>
+							<td>LM</td>
+							<td>PRE</td>
+							<td>LM</td>
+							<td>PRE</td>
+							<td>GBD</td>
+					</tr>
+					<tr>
+							<td>10:15</td>
+							<td>FOL</td>
+							<td>PRE</td>
+							<td>FOL</td>
+							<td>PRE</td>
+							<td>GBD</td>
+					</tr>
+					<td>11:15</td>
+					<th colspan="5">RECREO</th>
+					<tr>
+							<td>11:45</td>
+							<td>GBD</td>
+							<td>ISO</td>
+							<td>ISO</td>
+							<td>ISO</td>
+							<td>FHW</td>
+					</tr>
+					<tr>
+							<td>12:45</td>
+							<td>GBD</td>
+							<td>ISO</td>
+							<td>ISO</td>
+							<td>ISO</td>
+							<td>FHW</td>
+					</tr>
+					<tr>
+							<td>13:45</td>
+							<td>GBD</td>
+							<td>ISO</td>
+							<td>ISO</td>
+							<td>ISO</td>
+							<td>FHW</td>
+					</tr>
+			</tbody>
+	</table><br>
+
+<!-- Tabla alumnos -->
+
+	<table border="lpx solid black" class="tabla2">
+		<tr>
+			<th>Nombre</th>
+			<th>Apellido1</th>
+			<th>Apellido2</th>
+		</tr>
+		<tr>
+			<td>Censo</td>
+			<td>Torres</td>
+			<td>Delgado</td>
+		</tr>
+		<tr>
+			<td>Gigi</td>
+			<td>Verdugo</td>
+			<td>Carrasquill</td>
+		</tr>
+		<tr>
+			<td>Anaquin</td>
+			<td>Ehcai</td>
+			<td>Wolquer</td>
+		</tr>
+		<tr>
+			<td>Sasuke</td>
+			<td>Uchiha</td>
+			<td>El malote</td>
+		</tr>
+		<tr>
+			<td>Jose</td>
+			<td>Manuel</td>
+			<td>De la torre</td>
+		</tr>
+		<tr>
+			<td>Antonio</td>
+			<td>Gonzalez</td>
+			<td>Perez</td>
+		</tr>
+		<tr>
+			<td>Alejandro</td>
+			<td>Magno</td>
+			<td>Sanchez</td>
+		</tr>
+		<tr>
+			<td>Ezio</td>
+			<td>Auditore</td>
+			<td>Assasin</td>
+		</tr>
+		<tr>
+			<td>Donald</td>
+			<td>Adolf</td>
+			<td>Trump</td>
+		</tr>
+		<tr>
+			<td>Iñigo</td>
+			<td>Errejon</td>
+			<td>Junior</td>
+		</tr>
+	</table><br>
+
+
+<!-- 4 parrafos -->
+
+<p class="show">Parrafo1</p>
+<p class="show">Parrafo2</p>
+<p>Parrafo3</p>
+<p>Parrafo4</p>
+
+
+	<script>
+	  $(function() {
+			$("h1").addClass("claseh1");
+			$(".tabla1 thead").css({"background-color":"red","color":"white"});
+			$(".tabla2 tr:odd").css({"background-color":"grey","color":"black"});
+			$(".tabla2 tr:even").css({"background-color":"grey","color":"white"});
+			$("p[class!=show]").hide();
+	  });
+	</script>
+</body>
+</html>
